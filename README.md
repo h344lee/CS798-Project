@@ -1,1 +1,6 @@
 # CS798-Project
+This is an experimental proposal to monitor software-defined networks by predicting CPU usage of a software-defined network controller (ONOS) using machine learning technology. This project has four main goals:
+- This project focuses on CPU usage because a CPU is the most expensive resource in modern computer architecture. The ONOS controller in particular uses significantly more CPU power than other controllers [1]. The aim of this project is to predict the CPU usage of the ONOS controller with machine learning and to use this prediction value to modulate ONOS network performance monitoring.
+- This project also implements an adaptive monitoring mechanism by utilizing the CPU prediction value to deliver monitoring results that are as accurate and resource-efficient as possible.
+- Additionally, this project demonstrates real-time data visualization, which is essential to monitoring a network’s status. To monitor OpenFlow control messages, the Control Plane Monitor ONOS northbound application is used. This tool provides the number of PacketIn, PacketOut, and FlowMod messages in the last 1 minute.
+- Finally, this project provides a function that makes artificial new flows of a given speed and duration. In the monitoring simulation, a total of four flows are generated and monitored
